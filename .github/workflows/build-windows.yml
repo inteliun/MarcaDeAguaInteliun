@@ -1,1 +1,41 @@
+name: Build Windows EXE
 
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Crear EXE
+        run: python -m PyInstaller --clean --noconfirm MarcaDeAguaInteliun.spec
+
+      - name: Crear ZIP
+        shell: pwsh
+        run: Compress-Archive -Path dist/MarcaDeAguaInteliun.exe,README.md -DestinationPath MarcaDeAguaInteliun-Windows.zip
+
+      - name: Subir EXE como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: MarcaDeAguaInteliun-Windows
+          path: dist/MarcaDeAguaInteliun.exe
+
+      - name: Publicar ZIP en Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: MarcaDeAguaInteliun-Windows.zip
