@@ -1,0 +1,18 @@
+COMO PUBLICAR MARCA DE AGUA INTELIUN
+
+1. Crea un repositorio nuevo en GitHub llamado MarcaDeAguaInteliun.
+2. Sube todo el contenido de esta carpeta.
+3. En GitHub entra en Actions > Build Windows EXE > Run workflow.
+4. Espera a que termine.
+5. Abre la ejecución terminada y descarga el artefacto MarcaDeAguaInteliun-Windows.
+
+PARA CREAR UNA VERSION PUBLICA:
+
+Crea un tag desde GitHub, por ejemplo v1.0.0. El workflow generará una Release con:
+MarcaDeAguaInteliun-Windows.zip
+
+El ZIP contiene:
+- MarcaDeAguaInteliun.exe
+- README.md
+
+El usuario final NO necesita instalar Python.

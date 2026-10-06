@@ -1,0 +1,36 @@
+LICENCIA DE USO PROPIETARIA
+Marca de Agua Inteliun
+
+Copyright (c) 2026 Inteliun. Todos los derechos reservados.
+
+1. TITULARIDAD
+Este software, incluyendo su código, ejecutables, documentación, diseño y
+elementos asociados, es propiedad de Inteliun y está protegido por las leyes
+aplicables de propiedad intelectual.
+
+2. PERMISO DE USO
+Se concede al usuario una licencia limitada, personal, no exclusiva y
+revocable para instalar y utilizar el programa.
+
+3. RESTRICCIONES
+Sin autorización previa y por escrito de Inteliun, no está permitido:
+- vender, alquilar, sublicenciar o comercializar el software;
+- redistribuir el software o sus copias como producto independiente;
+- modificar, adaptar, descompilar o crear obras derivadas;
+- eliminar o alterar avisos de propiedad, copyright o licencia;
+- presentar el software o partes del mismo como propio.
+
+4. DISTRIBUCIÓN
+El programa puede compartirse únicamente mediante los canales oficiales
+designados por Inteliun. La redistribución por terceros requiere autorización
+previa y por escrito.
+
+5. SIN GARANTÍA
+El software se proporciona "tal cual", sin garantías expresas o implícitas,
+en la medida permitida por la legislación aplicable.
+
+6. CONTACTO
+Para solicitar permisos de distribución, modificación, uso comercial u otros
+derechos no concedidos expresamente en esta licencia, contacte con Inteliun.
+
+Esta licencia no sustituye el asesoramiento jurídico profesional.
